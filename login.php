@@ -10,3 +10,10 @@ if(isset($_POST['username'])&&isset($_POST['password'])){
     }
 }
 ?>
+<h1>login plz</h1>
+<form action="login.php" method="post">
+<input name="username" id="username" placeholder="Email" autocomplete="nope">
+<input name="password" id="password" placeholder="Password">
+<button id="Button"  type="submit">Sign in</button>
+</div>
+</form>
